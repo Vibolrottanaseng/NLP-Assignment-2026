@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Lock files
+*.lock
+
+# Ignore env/config toml but keep pyproject
+*.toml
+!pyproject.toml
+
+*.python-version
+
+pyproject.toml
