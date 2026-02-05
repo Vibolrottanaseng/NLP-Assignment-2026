@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LSTM Language Model Demo</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Emma by Jane Austen LSTM Language Model</h1>
+    <p class="subtitle">
+      Web demonstration of LSTM trained on <em>Emma by Jane Austen</em> (NLTK Datasets).
+    </p>
+
+    <!-- INPUT SECTION -->
+    <section class="card">
+      <h2>Text Generation</h2>
+
+      <label>Prompt</label>
+      <textarea id="prompt">emma was</textarea>
+
+      <div class="controls">
+        <div>
+          <label>Temperature</label>
+          <input id="temp" type="number" value="0.8" step="0.1" min="0.1" max="2.0">
+        </div>
+
+        <div>
+          <label>Max New Tokens</label>
+          <input id="tokens" type="number" value="50" step="10" min="10" max="300">
+        </div>
+
+        <button onclick="generate()">Generate</button>
+      </div>
+    </section>
+
+    <!-- OUTPUT SECTION -->
+    <section class="card">
+      <h2>Generated Output</h2>
+      <pre id="output">Click “Generate” to see the result.</pre>
+    </section>
+
+    <!-- DOCUMENTATION SECTION -->
+    <section class="card doc">
+      <h2>How the Web Application Works</h2>
+
+      <p>
+        This web application provides an interactive interface to a trained
+        <strong>Long Short-Term Memory (LSTM)</strong> language model.
+      </p>
+
+      <ul>
+        <li>
+          The user enters a <strong>text prompt</strong> and selects a
+          <strong>temperature</strong> and <strong>generation length</strong>.
+        </li>
+        <li>
+          The backend loads the pre-trained LSTM model and vocabulary and
+          performs <strong>iterative next-word prediction</strong>.
+        </li>
+        <li>
+          At each step, the model predicts a probability distribution over the
+          vocabulary, and the next word is sampled using the selected temperature.
+        </li>
+        <li>
+          The generated text is returned to the browser and displayed to the user.
+        </li>
+      </ul>
+
+      <p class="note">
+        Lower temperatures produce more conservative and grammatical text,
+        while higher temperatures increase diversity at the cost of coherence.
+      </p>
+    </section>
+  </div>
+
+<script>
+async function generate() {
+  const res = await fetch("/generate", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      prompt: document.getElementById("prompt").value,
+      temperature: document.getElementById("temp").value,
+      max_new_tokens: document.getElementById("tokens").value
+    })
+  });
+
+  const data = await res.json();
+  document.getElementById("output").textContent = data.result;
+}
+</script>
+</body>
+</html>
