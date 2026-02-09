@@ -14,7 +14,8 @@ Dataset information:
 ---
 ## Text Processing
 
-### **Tokenization:**
+### **Normaliation:**
+The preprocessing pipeline applies tokenization but minimal explicit text normalization beyond whitespace trimming.
 
 
 
