@@ -3,7 +3,7 @@
 In this assignment I chose to create a machine translation for English to Khmer since it is my native language. In this assignment I will be explored and comapre between two attention mechanism which are general attention and additive attention. The assignment deliver by implementing a web base  application for demonstration. 
 
 ---
-### Dataset
+## Dataset
 
 Dataset information:
 
@@ -12,7 +12,7 @@ Dataset information:
 * **Dataset Size**: split by train (2.51M) I cut into 20000 rows for use in this assignment
 
 ---
-### Text Processing
+## Text Processing
 
 ### **Tokenization:**
 
