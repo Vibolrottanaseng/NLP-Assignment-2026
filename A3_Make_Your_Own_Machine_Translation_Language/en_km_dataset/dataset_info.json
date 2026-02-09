@@ -1,0 +1,58 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "en-km",
+  "dataset_name": "nmt-parallel-corpus",
+  "dataset_size": 730182349,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/liboaccn/nmt-parallel-corpus@97dac1faeea352c4c7dbf6939b252e72a025e008/en-km.parquet": {
+      "num_bytes": 168462096,
+      "checksum": null
+    }
+  },
+  "download_size": 168462096,
+  "features": {
+    "src_txt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tgt_txt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "src_lang": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tgt_lang": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "dataset": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 898644445,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 730182349,
+      "num_examples": 2509098,
+      "shard_lengths": [
+        2097152,
+        411946
+      ],
+      "dataset_name": "nmt-parallel-corpus"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
