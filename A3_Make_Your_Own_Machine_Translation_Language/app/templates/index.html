@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Additive Attention Translator</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Additive Attention Translator</h1>
+      <p class="sub">Transformer with additive attention Translator (English to Khmer)</p>
+    </header>
+
+    <section class="panel">
+      <label class="label" for="input">Input</label>
+      <textarea id="input" class="textarea" placeholder="Type text to translate..."></textarea>
+
+      <div class="row">
+        <button id="btn" class="btn">Translate</button>
+        <span id="status" class="status"></span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <label class="label">Output</label>
+      <div id="output" class="output"></div>
+      <details class="details">
+        <summary>Show attention (debug)</summary>
+        <pre id="attn" class="attn"></pre>
+      </details>
+    </section>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
