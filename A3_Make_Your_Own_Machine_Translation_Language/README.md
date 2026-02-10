@@ -25,7 +25,7 @@ Khmer text is normally written without spaces between words, so word boundaries 
 2. tokenization using `khmernltk.word_tokenize` to split khmer sentence into khmer words token
 3. Output list of tokens (words), which are then mapped to vocabulary IDs for the model.
 
-**credit:** ([VietHoang1512/khmer-nltk](https://github.com/VietHoang1512/khmer-nltk))
+**credit:** ([VietHoang1512/khmer-nltk]https://github.com/VietHoang1512/khmer-nltk)
 
 ### **Attention Mechanism**
 
@@ -35,5 +35,15 @@ Khmer text is normally written without spaces between words, so word boundaries 
     $e_i = v_T tanh (W_1h_i + W_2s)$
 
 **Ref:** [An Attentive Survey of Attention Models](https://arxiv.org/pdf/1904.02874.pdf)
+
+---
+## Evaluation and Verification
+
+### 1. The performance comparison of the two models 
+
+| Attentions         | Training Loss  | Training PPL  | Validation Loss | Validation PPL |
+| :---               |     :---       |    :---       |       :---      |     :---:      |
+| General Attention  |     3.085      |    58.035     |      3.402      |    30.034      |
+| Additive attention |    0.773       |    6.874      |      12.775     |    3.658       |
 
 
