@@ -62,4 +62,4 @@ The additive attention mechanism effectively enhances neural machine translation
 
 ## Web Application
 
-<img src="figures/additive_att_demo.png" width="400"/>
+<img src="figures/additive_att_demo.png"/>
