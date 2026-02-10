@@ -18,7 +18,8 @@ Dataset information:
 The preprocessing pipeline applies tokenization but minimal explicit text normalization beyond whitespace trimming.
 
 ### ***Tokenizationn**
-
+The target-side preprocessing pipeline is::
+**(1)** optional Unicode/whitespace normalization,
 
 
 
