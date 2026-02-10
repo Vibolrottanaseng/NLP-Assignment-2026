@@ -1,6 +1,6 @@
 # A3 - Make Your Own Machine Translation Language (English to Khmer)
 
-In this assignment I chose to create a machine translation for English to Khmer since it is my native language. For this assignment I will explor and comapre between two attention mechanism which are general attention and additive attention. The assignment deliver by implementing a web base  application for demonstration. 
+In this assignment I chose to create a machine translation for English to Khmer since it is my native language. In this assignment I will explore and comapre between two attention mechanism which are general attention and additive attention. The assignment deliver by implementing a web base application with the best performance attention mechanism for demonstration. 
 
 ---
 ## Dataset
@@ -25,7 +25,7 @@ Khmer text is normally written without spaces between words, so word boundaries 
 2. tokenization using `khmernltk.word_tokenize` to split khmer sentence into khmer words token
 3. Output list of tokens (words), which are then mapped to vocabulary IDs for the model.
 
-**credit:** ([VietHoang1512/khmer-nltk]https://github.com/VietHoang1512/khmer-nltk)
+**credit:** [VietHoang1512/khmer-nltk]https://github.com/VietHoang1512/khmer-nltk
 
 ## Model 
 ### **Attention Mechanism**
