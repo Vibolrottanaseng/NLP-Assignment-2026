@@ -50,3 +50,9 @@ Khmer text is normally written without spaces between words, so word boundaries 
 | General Attention | Additive Attention |
 |-----------------|----------------|
 | <img src="figures/output_general_att.png" width="400"/> |<img src="figures/output_additive_att.png" width="400"/>   | 
+
+### 3. Attention map of the two models 
+
+| General Attention | Additive Attention |
+|-----------------|----------------|
+| <img src="figures/att_map_general.png" width="400"/> |<img src="figures/att_map_addictive.png" width="400"/>   | 
