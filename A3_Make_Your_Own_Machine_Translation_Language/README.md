@@ -25,6 +25,8 @@ Khmer text is normally written without spaces between words, so word boundaries 
 2. tokenization using `khmernltk.word_tokenize` to split khmer sentence into khmer words token
 3. Output list of tokens (words), which are then mapped to vocabulary IDs for the model.
 
+**credit:** ([text](https://github.com/VietHoang1512/khmer-nltk))
+
 
 
 
