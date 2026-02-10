@@ -29,8 +29,8 @@ Khmer text is normally written without spaces between words, so word boundaries 
 
 ### **Attention Mechanism**
 
-1. General Attention
-    scores(s_t, h_i) = s_t^T h_i
+1. **General Attention** <br>
+    scores $(s_t, h_i) = s_t^T h_i$
 
 
 
