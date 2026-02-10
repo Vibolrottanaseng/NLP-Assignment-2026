@@ -18,9 +18,12 @@ Dataset information:
 The preprocessing pipeline applies tokenization but minimal explicit text normalization beyond whitespace trimming.
 
 ### ***Tokenizationn**
-The target-side preprocessing pipeline is::
+Khmer text is normally written without spaces between words, so word boundaries are not explicit. In this assignment, I used khmer-nltk to perform Khmer word segmentation by automatically splitting Khmer sentences into word tokens using a dictionary/statistical segmentation approach.
+
 **(1)** whitespace normalization
-**(2)** tokenization using `khmernltk.word_tokenize`
+**(2)** tokenization using `khmernltk.word_tokenize` to split khmer sentence into khmer words token
+**(3)** Output list of tokens (words), which are then mapped to vocabulary IDs for the model.
+
 
 
 
