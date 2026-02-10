@@ -27,6 +27,7 @@ Khmer text is normally written without spaces between words, so word boundaries 
 
 **credit:** ([VietHoang1512/khmer-nltk]https://github.com/VietHoang1512/khmer-nltk)
 
+## Model 
 ### **Attention Mechanism**
 
 1. **General Attention** <br>
