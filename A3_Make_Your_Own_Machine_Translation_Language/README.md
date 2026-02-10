@@ -31,8 +31,9 @@ Khmer text is normally written without spaces between words, so word boundaries 
 
 1. **General Attention** <br>
     $e_i = s^T h_i$
-1. **Additive Attention** <br>
-    $e_i = v_T tanh (W_1h_i + W_2s) $ 
+2. **Additive Attention** <br>
+    $e_i = v_T tanh (W_1h_i + W_2s)$
 
+**Ref:** [An Attentive Survey of Attention Models](https://arxiv.org/pdf/1904.02874.pdf)
 
 
