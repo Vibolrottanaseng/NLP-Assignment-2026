@@ -43,7 +43,10 @@ Khmer text is normally written without spaces between words, so word boundaries 
 
 | Attentions         | Training Loss  | Training PPL  | Validation Loss | Validation PPL |
 | :---               |     :---       |    :---       |       :---      |     :---:      |
-| General Attention  |     3.085      |    58.035     |      3.402      |    30.034      |
+| General Attention  |     3.085      |    58.035     |      3.402      |    53.724      |
 | Additive attention |    0.773       |    6.874      |      12.775     |    3.658       |
 
-
+### 2. Perfomance plot of the two models 
+| General Attention | Additive Attention |
+|-----------------|----------------|
+| <img src="figures/output_general_att.png" width="300"/> |<img src="figures/output_additive_att.png" width="300"/>   | 
