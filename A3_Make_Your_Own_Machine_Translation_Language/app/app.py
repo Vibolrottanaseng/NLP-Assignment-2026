@@ -241,7 +241,6 @@ def build_model(input_dim: int, output_dim: int, device: str):
 
 # -----------------------------
 # Simple tokenization + numericalization
-# (Replace tokenize() with your notebook tokenizers if you want.)
 # -----------------------------
 def tokenize(text: str) -> List[str]:
     return text.strip().split()
