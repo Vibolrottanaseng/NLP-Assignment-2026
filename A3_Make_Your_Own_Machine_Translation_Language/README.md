@@ -55,4 +55,7 @@ Khmer text is normally written without spaces between words, so word boundaries 
 
 | General Attention | Additive Attention |
 |-----------------|----------------|
-| <img src="figures/att_map_general.png" width="400"/> |<img src="figures/att_map_addictive.png" width="400"/>   | 
+| <img src="figures/att_map_general.png" width="400"/> |<img src="figures/att_map_addictive.png" width="400"/>   |
+
+### 4. Analysis: 
+The additive attention mechanism effectively enhances neural machine translation by enabling dynamic alignment between source and target sequences. The observed improvements in training and validation metrics demonstrate that additive attention supports accurate translation between native language and English by handling structural differences, maintaining contextual information, and learning flexible word associations.
