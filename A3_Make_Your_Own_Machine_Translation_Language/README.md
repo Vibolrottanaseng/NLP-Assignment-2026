@@ -20,7 +20,7 @@ The preprocessing pipeline applies tokenization but minimal explicit text normal
 ### ***Tokenizationn**
 The target-side preprocessing pipeline is::
 **(1)** whitespace normalization
-**(2)** tokenization using `<khmernltk.word_tokenize>`
+**(2)** tokenization using `khmernltk.word_tokenize`
 
 
 
