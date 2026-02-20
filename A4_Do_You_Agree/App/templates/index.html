@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A4 Do You Agree?</title>
+</head>
+
+<body>
+
+<form method="post" action="/predict">
+<h1>A4 Do You Agree?</h1>
+  <div style="margin-bottom: 16px;">
+    <label for="premise"><b>Premise:</b></label><br>
+    <textarea id="premise" name="premise" rows="4" cols="80">{{ premise or "" }}</textarea>
+  </div>
+
+  <div style="margin-bottom: 16px;">
+    <label for="hypothesis"><b>Hypothesis:</b></label><br>
+    <textarea id="hypothesis" name="hypothesis" rows="4" cols="80">{{ hypothesis or "" }}</textarea>
+  </div>
+
+  <button type="submit">Predict</button>
+
+</form>
+
+{% if result %}
+  <h2>Prediction:</h2>
+  <p><b>Label:</b> {{ result }}</p>
+{% endif %}
+</body>
+</html>
