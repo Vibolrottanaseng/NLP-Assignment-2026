@@ -94,6 +94,10 @@ Two input fields:
   - Predict NLI relationship between sentences
   - Displays predicted label
 
+## Web Application
+
+<img src="figures/A4-Screenshot.png"/>
+
 
 
 
