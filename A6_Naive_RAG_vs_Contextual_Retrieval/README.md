@@ -1,2 +1,2 @@
-A6 Naive RAG VS Contextual RAG
+# A6 Naive RAG VS Contextual RAG
 
