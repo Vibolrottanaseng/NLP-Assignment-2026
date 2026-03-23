@@ -1,38 +1,20 @@
-# README — NLP Assignment A6: Naive RAG vs. Contextual Retrieval
-
-## Student Information
+# A6: Naive RAG vs. Contextual Retrieval
 
 * **Student ID:** 126425
 * **Assigned Chapter:** Chapter 5
 * **Chapter Title:** *Embeddings*
-
-## Project Overview
 
 This assignment implements and compares two retrieval-based question answering approaches on the assigned textbook chapter:
 
 1. **Naive RAG**
 2. **Contextual Retrieval**
 
-The assigned chapter was determined from the last digit of the student ID. Since the student ID ends in **5**, the assigned chapter is **Chapter 5: Embeddings**.
+The assigned chapter was determined from the last digit of the student ID. Since my student ID ends in **5**, the assigned chapter is **Chapter 5: Embeddings**.
 
-The project includes document extraction, preprocessing, chunking, vector indexing, retrieval-based answering, QA evaluation, ROUGE-based comparison, JSON result export, and a simple chatbot web application.
+The assignment includes document extraction, preprocessing, chunking, vector indexing, retrieval-based answering, QA evaluation, ROUGE-based comparison, JSON result export, and a simple chatbot web application.
 
----
 
-## Objectives
-
-The goals of this assignment are:
-
-* Extract and process the assigned textbook chapter.
-* Build a **Naive RAG** pipeline using standard chunking and retrieval.
-* Build a **Contextual Retrieval** pipeline by enriching chunks with additional context before embedding.
-* Prepare at least **20 question-answer pairs** from the chapter.
-* Compare both approaches using **ROUGE-1, ROUGE-2, and ROUGE-L**.
-* Develop a simple **chatbot web application** that answers questions about the assigned chapter and displays the source chunk used.
-
----
-
-## Dataset / Source Material
+## Dataset 
 
 * **Book:** *Speech and Language Processing (3rd edition draft)*
 * **Chapter Used:** Chapter 5 — *Embeddings*
@@ -115,8 +97,7 @@ Both methods were evaluated using:
 The generated answers were compared against manually written reference answers.
 
 ### 6. Web Application
-
-A simple **Streamlit chatbot** was developed.
+A simple chatbot was developed.
 The chatbot:
 
 * allows users to ask questions about Chapter 5
@@ -124,39 +105,6 @@ The chatbot:
 * displays the generated answer
 * displays the retrieved source chunk used to support the answer
 
----
-
-## Tools and Libraries Used
-
-* Python
-* PyMuPDF (`fitz`)
-* LangChain
-* FAISS
-* Hugging Face Transformers
-* Sentence Transformers
-* Streamlit
-* pandas
-* rouge-score
-
----
-
-## File Structure
-
-```text
-A6_Naive_RAG_vs_Contextual_Retrieval/
-│
-├── app.py
-├── ed3book_jan26.pdf
-├── chapter5_embeddings_clean.txt
-├── assignment_output_126425.json
-├── naive_rag_rouge_scores.csv
-├── contextual_rag_rouge_scores.csv
-├── rouge_comparison_summary.csv
-├── 01-rag-langchain.ipynb
-└── README.md
-```
-
----
 
 ## Results
 
@@ -175,7 +123,6 @@ A likely reason is that the locally generated contextual summaries were often to
 
 Even though Contextual Retrieval did not outperform Naive RAG in this experiment, it still demonstrated the intended design principle of enriching chunks before embedding.
 
----
 
 ## Discussion
 
@@ -190,36 +137,6 @@ To keep the assignment functional and complete, a local contextual enrichment st
 
 The final chatbot uses the **Contextual Retrieval** backend, as required by the assignment, and shows the source chunk used for each answer.
 
----
-
-## How to Run
-
-### 1. Install dependencies
-
-Example with `uv`:
-
-```bash
-uv pip install pymupdf langchain langchain-community faiss-cpu sentence-transformers transformers streamlit rouge-score pandas
-```
-
-### 2. Run the notebook / pipeline
-
-Run the notebook cells to:
-
-* extract and clean Chapter 5
-* build the Naive RAG index
-* build the Contextual Retrieval index
-* generate QA results
-* compute ROUGE
-* export JSON
-
-### 3. Launch the chatbot
-
-```bash
-uv run streamlit run app.py
-```
-
----
 
 ## Example Chatbot Behavior
 
@@ -235,7 +152,7 @@ For each question, the app returns:
 * the generated answer
 * the source chunk used from Chapter 5
 
----
+
 
 ## Conclusion
 
@@ -245,16 +162,4 @@ The project demonstrated the complete workflow of document preprocessing, chunki
 
 Overall, the assignment shows that retrieval-based QA pipelines can be built effectively on textbook chapters, and that evaluation is essential when comparing different retrieval strategies.
 
----
 
-## Deliverables Completed
-
-* [x] Assigned chapter selected based on student ID
-* [x] Chapter extracted and cleaned
-* [x] 20 QA pairs created
-* [x] Naive RAG implemented
-* [x] Contextual Retrieval implemented
-* [x] ROUGE evaluation completed
-* [x] JSON output exported
-* [x] Chatbot web application implemented
-* [x] Source chunk citation displayed in the chatbot
