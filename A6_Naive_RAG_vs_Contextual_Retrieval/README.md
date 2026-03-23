@@ -33,9 +33,6 @@ The chapter covers the following topics:
 * Bias in embeddings
 * Evaluation of vector models
 
----
-
-## Methodology
 
 ### 1. Document Extraction and Cleaning
 
