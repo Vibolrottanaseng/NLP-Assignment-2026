@@ -9,6 +9,6 @@ This repository created for the purpose of submitting NLP Assignment.
 |<a href="https://github.com/Vibolrottanaseng/NLP-Assignment-2026/tree/ffa31cbd8e97aa0eabb63244ad2c7597e60a7008/A3_Make_Your_Own_Machine_Translation_Language">A3: Make Your Own Machine Translation Language</a>|
 |<a href="https://github.com/Vibolrottanaseng/NLP-Assignment-2026/tree/ffa31cbd8e97aa0eabb63244ad2c7597e60a7008/A4_Do_You_Agree">A4: Do You AGREE</a>|
 |<a href="https://github.com/Vibolrottanaseng/NLP-Assignment-2026/tree/main/A5_Human_Preference"> A5: Human Preference |
-|A6: TBA |
+|<a href="https://github.com/Vibolrottanaseng/NLP-Assignment-2026/tree/main/A6_Naive_RAG_vs_Contextual_Retrieval"> A6: Naive RAG vs Contextual Retrieval|
 |A7: TBA |
 

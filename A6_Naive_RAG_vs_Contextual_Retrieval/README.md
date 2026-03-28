@@ -159,4 +159,6 @@ The project demonstrated the complete workflow of document preprocessing, chunki
 
 Overall, the assignment shows that retrieval-based QA pipelines can be built effectively on textbook chapters, and that evaluation is essential when comparing different retrieval strategies.
 
+## Web Application
 
+<img src="RAG-Screenshot.png"/>
