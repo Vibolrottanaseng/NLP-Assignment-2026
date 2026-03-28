@@ -1,5 +1,5 @@
 import re
-import fitz
+import pymupdf
 import streamlit as st
 import torch
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
@@ -51,7 +51,7 @@ st.markdown("""
 # Utilities
 # -----------------------------
 def load_chapter_text(pdf_path):
-    doc = fitz.open(pdf_path)
+    doc = pymupdf.open(pdf_path)
     start_page = 95   # printed page 96
     end_page = 119    # exclusive
     chapter_pages = []
