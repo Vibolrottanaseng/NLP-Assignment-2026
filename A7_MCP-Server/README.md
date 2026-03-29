@@ -66,9 +66,9 @@ ngrok http 5678
 
 ## Final Result
 - Automated Project Scheduling
-![alt text](Images/image1.png)
+<img src="Images/image1.png" width="300"/>
 - Interaction Verification
-![alt text](Images/image2.png)
-![alt text](Images/image3.png)
+<img src="Images/image2.png" width="300"/>
+<img src="Images/image3.png" width="300"/>
 
 
