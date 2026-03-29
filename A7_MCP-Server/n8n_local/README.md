@@ -4,8 +4,8 @@
 This assignment implements an integrated AI agent ecosystem using the Model Context Protocol (MCP) in **n8n**. The system is designed to go beyond basic chat by allowing an AI agent to use tools, communicate through **Telegram**, and create project schedules in **Google Calendar**. The solution was deployed locally with **Docker** and exposed to the internet using **ngrok** so that external services such as Telegram and Google OAuth callbacks could reach the local n8n instance.
 
 The assignment consists of two major parts:
-1. **Task 1: MCP Infrastructure & Server Setup**
-2. **Task 2: Telegram & Google Calendar Integration** 
+**Task 1: MCP Infrastructure & Server Setup**
+**Task 2: Telegram & Google Calendar Integration** 
 
 ## Objectives
 The goals of this assignment are to:
@@ -54,5 +54,17 @@ This workflow allows a user to send scheduling requests through Telegram, have t
 ### Docker Setup
 n8n was run locally using Docker. This allowed the workflows and credentials to be managed in a local self-hosted environment. 
 Example command:
-```bash
-docker compose up -d
+``` 
+docker compose up -d 
+```
+
+### Ngrok Setup
+Since Telegram and Google OAuth require public callback/webhook URLs, ngrok was used to tunnel the local n8n instance to the internet. The ngrok base URL was also used as the **WEBHOOK_URL** for n8n.
+
+``` 
+ngrok http 5678 
+```
+
+## Final Result
+
+
