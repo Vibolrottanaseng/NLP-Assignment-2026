@@ -67,6 +67,7 @@ Since Telegram and Google OAuth require public callback/webhook URLs, ngrok was 
 
 ``` 
 ngrok http 5678 
+https://nonmotoring-richie-inaptly.ngrok-free.dev/
 ```
 
 ## Final Result
