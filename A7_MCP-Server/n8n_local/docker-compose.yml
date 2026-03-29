@@ -1,0 +1,15 @@
+services:
+  n8n:
+    image: docker.n8n.io/n8nio/n8n
+    container_name: n8n-local
+    ports:
+      - "5678:5678"
+    environment:
+      - TZ=Asia/Bangkok
+      - GENERIC_TIMEZONE=Asia/Bangkok
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=https://nonmotoring-richie-inaptly.ngrok-free.dev/
+    volumes:
+      - ./n8n_data:/home/node/.n8n
