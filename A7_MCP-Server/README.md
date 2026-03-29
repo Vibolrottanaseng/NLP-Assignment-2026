@@ -39,7 +39,7 @@ A separate AI Agent workflow was created using:
 
 The MCP Client was configured with the MCP Server’s **Production URL**, allowing the AI Agent to access the server-side tools. The workflow was tested in the n8n chat interface to verify that the agent could successfully call MCP tools such as Date & Time. 
 
-<img src="Images/image5.png" width="500"/>
+<img src="Images/image5.png">
 
 ### 3. Telegram Scheduling & google calendar Workflow
 A Telegram-based workflow was built for Task 2 using:
