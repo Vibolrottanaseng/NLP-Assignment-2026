@@ -24,7 +24,10 @@ The MCP Server workflow was created in n8n using an **MCP Server Trigger** conne
 - **Text Formatter**
 - **Date & Time**
 
-These tools were made discoverable to the client agent through the MCP server endpoint. This satisfies the assignment requirement of implementing at least three internal tools in the MCP Server workflow. 
+These tools were made discoverable to the client agent through the MCP server endpoint. This satisfies the assignment requirement of implementing at least three internal tools in the MCP Server workflow.
+
+<img src="Images/image4.png" width="300"/>
+
 
 ### 2. AI Agent Client Workflow
 A separate AI Agent workflow was created using:
@@ -35,6 +38,8 @@ A separate AI Agent workflow was created using:
 - **MCP Client**
 
 The MCP Client was configured with the MCP Server’s **Production URL**, allowing the AI Agent to access the server-side tools. The workflow was tested in the n8n chat interface to verify that the agent could successfully call MCP tools such as Date & Time. 
+
+<img src="Images/image5.png" width="300"/>
 
 ### 3. Telegram Scheduling & google calendar Workflow
 A Telegram-based workflow was built for Task 2 using:
