@@ -7,7 +7,6 @@ The assignment consists of two major parts:
 **Task 1: MCP Infrastructure & Server Setup**
 **Task 2: Telegram & Google Calendar Integration** 
 
-## Objectives
 The goals of this assignment are to:
 - deploy **n8n locally with Docker**
 - expose the local instance publicly using **ngrok**
