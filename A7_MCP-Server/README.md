@@ -57,7 +57,9 @@ This workflow allows a user to send scheduling requests through Telegram, have t
 
 ### Docker Setup
 n8n was run locally using Docker. This allowed the workflows and credentials to be managed in a local self-hosted environment. 
-Example command:
+
+<img src="Images/image6.png">
+
 ``` 
 docker compose up -d 
 ```
