@@ -45,7 +45,7 @@ The MCP Client was configured with the MCP Server’s **Production URL**, allowi
 A Telegram-based workflow was built for Task 2 using:
 - **Telegram Trigger**
 - **AI Agent**
-- **Groq Chat Model**
+- **Groq Chat Model (openai/gpt-oss-120b)**
 - **Simple Memory**
 - **Google Calendar Create Event**
 - **Google Calendar Get Many Events**
@@ -71,9 +71,10 @@ https://nonmotoring-richie-inaptly.ngrok-free.dev/
 ```
 
 ## Final Result
-- Automated Project Scheduling
+### Automated Project Scheduling
 <img src="Images/image1.png" width="300"/>
-- Interaction Verification
+
+### Interaction Verification
 <img src="Images/image2.png" width="300"/>
 <img src="Images/image3.png" width="300"/>
 
